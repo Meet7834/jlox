@@ -26,7 +26,7 @@ public class Lox {
         byte[] bytes = Files.readAllBytes(Paths.get(path));
         run(new String(bytes, Charset.defaultCharset()));
 
-        if (hadError) System.Exit(65);
+        if (hadError) System.exit(65);
     }
 
     private static void runPrompt() throws IOException {
